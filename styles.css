@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main1: #2b22ab;
+    --main2: #5722ab;
+    --main3: #27003d;
+    --dark: #5722ab;
+    --light: rgb(239, 238, 238);
+    --midlight: lightgrey;
+    --highlight: gray;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main1); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main3); 
+  }
+
+.mainBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, var(--main1), var(--main2), var(--main3));
+}
+
+.subBody {
+    background-color: var(--light);
+    border-radius: 20px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.searchBox input{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+.iconBox1{
+    padding: 10px;
+    border-radius: 50%;
+    color:cornflowerblue;
+}
+.bSubBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    text-align: center;
+    font-size: 18px;
+}
+.txt{
+    font-weight: 700;
+}
+.section2 .txt{
+    font-size: 24px;
+}
+.section1 , .section2 , .section3{
+    margin-top: 10px;
+}
+.section3 span{
+    color: blue;
+}
+.section3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.txt2{
+    font-size: 12px ;
+    font-weight: 700;
+}
+.section3 .sub {
+    width: 100%;
+    padding: 15px;
+    border-top: 1px solid grey;
+}
+.section3 .sub .txt{
+    color: blue;
+    font-weight:700 ;
+}
+.txt1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+} 
+.txt3{
+    font-weight: 700;
+}

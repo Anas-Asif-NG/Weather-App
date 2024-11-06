@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="mainBody" id="body">
+      <div class="subBody">
+        <div class="head">
+          <div class="searchBox">
+            <input
+              type="text"
+              id="input"
+              placeholder="Please Enter City Name"
+            />
+          </div>
+          <div class="iconBox1 iconBox">
+            <i class="fa fa-location" id="location"onclick="getLocation()"></i>
+          </div>
+        </div>
+        <div class="bSubBody" id="subsBody">
+          <div class="section1">
+            <i
+              class="fa fa-location-dot"
+              style="color: cornflowerblue; margin-right: 10px"
+            ></i>
+            <span id="cityName" class="txt"></span> ,
+            <span class="txt" id="country"></span>
+          </div>
+          <div class="section2">
+            <div class="weatherImg">
+              <img src="" width="150px" id="img" alt="" />
+            </div>
+            <div class="txt1" id="temp"></div>
+            <div class="txt3" id="weatherName"></div>
+          </div>
+          <div class="section3">
+            <!-- Humidity - <span id="hum" class="txt">34%</span> | Wind - <span class="txt" id="wind">40km/h</span> -->
+            <div class="sub" style="border-right: 1px solid grey">
+              <div id="humidity" class="txt"></div>
+              <div class="txt2">Humidity</div>
+            </div>
+            <div class="sub">
+              <div id="feel" class="txt"></div>
+              <div class="txt2">Feels Like</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
